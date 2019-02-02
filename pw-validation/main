@@ -1,0 +1,26 @@
+public class Main {
+  static String pw1 = "hell";
+  static String pw2 = "hello1!";
+  // Declaring the passwords
+  public static void main(String[] args) {
+      System.out.println("Your password is " + pw1.length() + " characters long.");
+      check(pw1);
+  }
+  public static void check(String pw1){
+      if(pw1.length() < 5){
+        System.out.println("Too short.");
+      }
+      else if(pw1.length() > 10){
+        System.out.println("Too long.");
+      }
+      else if(false){
+        //regex1
+      }
+      else if(false){
+        //regex2
+      }
+      else{
+        System.out.println("Your password was entered correctly.");
+      }
+  }
+}
