@@ -1,6 +1,14 @@
+import java.util.regex.*;
+import java.lang.String.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class Main {
-  static String pw1 = "hell";
-  static String pw2 = "hello1!";
+  static String pwx = "hell";
+  static String pw1 = "hello1!";
+  //static Pattern numbers = Pattern.compile("[0-9]");
+  //static Pattern special = Pattern.compile("[^A-Za-z0-9]");
+  static String numbers = "(.*[0-9].*)";
   // Declaring the passwords
   public static void main(String[] args) {
       System.out.println("Your password is " + pw1.length() + " characters long.");
@@ -13,14 +21,12 @@ public class Main {
       else if(pw1.length() > 10){
         System.out.println("Too long.");
       }
-      else if(false){
-        //regex1
-      }
-      else if(false){
-        //regex2
+      else if(!pw1.matches(numbers)){
+        System.out.println("Your password does not contain any numbers.");
       }
       else{
-        System.out.println("Your password was entered correctly.");
+        System.out.println("Your password is " + pw1);
+        System.out.println(pw1.contains(numbers));
       }
   }
 }
