@@ -6,8 +6,6 @@ import java.util.regex.Pattern;
 public class Main {
   static String pwx = "hell";
   static String pw1 = "hello1!";
-  //static Pattern numbers = Pattern.compile("[0-9]");
-  //static Pattern special = Pattern.compile("[^A-Za-z0-9]");
   static String numbers = "(.*[0-9].*)";
   // Declaring the passwords
   public static void main(String[] args) {
