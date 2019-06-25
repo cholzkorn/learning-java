@@ -6,7 +6,12 @@ public class EmailApp {
 		// TODO Auto-generated method stub
 		Email em1 = new Email("John", "Smith");
 		
-		em1.changePassword("randomstuff");
-	}
+		// Get and set methods
+		em1.setAlternateEmail("js@gmail.com");
+		System.out.println(em1.getAlternateEmail());
+		
+		// everything automated
+		System.out.println(em1.showInfo());
+	};
 
-}
+};
